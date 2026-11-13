@@ -1,0 +1,24 @@
+# ============================================================================
+# REGLAS DE EXCLUSIÓN DE GIT - PROYECTO DATA ANALYTICS
+# ============================================================================
+
+# 1. Datos crudos y procesados (evita subir datasets pesados al repositorio)
+data/raw/*
+data/processed/*
+*.csv
+*.xlsx
+
+# 2. Credenciales y variables de entorno (protege claves de Supabase)
+.env
+.env.local
+*.key
+
+# 3. Archivos binarios de Power BI (se publican en la nube, no en Git)
+*.pbix
+*.pbit
+
+# 4. Archivos temporales del Sistema Operativo y VS Code
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
